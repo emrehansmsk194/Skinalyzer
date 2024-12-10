@@ -47,6 +47,15 @@
             background-color: #333;
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Hover durumunda gölgeyi artır */
             }
+            @media (max-width: 768px) {
+    #scrollToTopBtn {
+        bottom: 15px; 
+        right: 15px; 
+        width: 80px; 
+        height: 35px; 
+        font-size: 16px; 
+        }
+    }
     </style>
     <header class="header">
         <a href="#" class="logo text-dark">Skinalyzer</a>
@@ -224,6 +233,11 @@
         function scrollToTop() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('open');
         }
     </script>
 </body>

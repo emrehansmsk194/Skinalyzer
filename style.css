@@ -40,3 +40,28 @@
 .navbar a:hover::before{
     width: 100%;
 }
+
+/* Mobil Cihazlar için Navbar Ayarları */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column; /* Menü öğelerini dikey hizala */
+        align-items: center; /* Tüm menü öğelerini ortala */
+        gap: 20px; /* Öğeler arasına eşit boşluk ekle */
+    }
+
+    .navbar a {
+        font-size: 18px; /* Menü yazı boyutu */
+        color: #000; /* Yazı rengi */
+        text-decoration: none; /* Alt çizgi kaldır */
+        text-align: center; /* Yazıları ortala */
+        width: 100%; /* Her bağlantıyı aynı genişlikte yap */
+    }
+
+    .logo {
+        font-size: 22px; /* Logo yazı boyutu */
+        margin-bottom: 20px; /* Logo ile menü öğeleri arasına boşluk ekle */
+        text-align: center; /* Logoyu ortala */
+        width: 100%; /* Logoyu tam hizaya getir */
+    }
+}
